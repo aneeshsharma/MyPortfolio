@@ -1,0 +1,23 @@
+@font-face {
+    font-family: logo-font;
+    src: url("../fonts/LEMONMILK-Bold.otf");
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 15px 25%;
+    flex-direction: row;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-family: logo-font;
+}

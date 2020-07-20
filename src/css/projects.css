@@ -1,0 +1,17 @@
+.project-card {
+    position: relative;
+    display: flex;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    min-height: 20vh;
+    min-width: 500px;
+    margin: 20px;
+}
+
+.project-row {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+}
