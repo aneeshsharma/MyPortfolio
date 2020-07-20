@@ -21,6 +21,11 @@
     background-blend-mode: overlay;
 }
 
+.landing-section i {
+    color: white;
+    margin: 20px;
+}
+
 .know-more-button {
     position: absolute;
     display: flex;
@@ -28,6 +33,10 @@
     cursor: pointer;
     bottom: 30px;
     font-size: 36px;
+}
+
+.know-more-button i {
+    margin: 3px;
 }
 
 .projects-section {
@@ -38,6 +47,7 @@
     width: 100%;
     background-color: white;
     padding: 30px 20%;
+    height: 100vh;
 }
 
 .projects-section h1 {

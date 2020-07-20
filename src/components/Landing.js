@@ -24,6 +24,8 @@ class Landing extends Component {
             define: this.definingText[0],
             blink: true,
         };
+
+        this.projectsRef = React.createRef();
     }
 
     componentDidMount() {
@@ -35,6 +37,10 @@ class Landing extends Component {
         var blink = this.state.blink;
         blink = !blink;
         this.setState({ blink: blink });
+    };
+
+    scrollToRef = (ref) => {
+        window.scrollTo(0, ref.current.offsetTop);
     };
 
     changeDefiningText = () => {
@@ -109,8 +115,21 @@ class Landing extends Component {
                     {this.state.define}
                     {blink}
                 </b>
-                <div className='know-more-button'>
-                    Know More<i class='fas fa-chevron-down'></i>
+                <Row>
+                    <a href='https://github.com/aneeshsharma'>
+                        <i class='fab fa-github'></i>
+                    </a>
+                    <a href='https://www.linkedin.com/in/anishsharma15/'>
+                        <i class='fab fa-linkedin'></i>
+                    </a>
+                </Row>
+                <div
+                    className='know-more-button'
+                    onClick={() => {
+                        this.scrollToRef(this.projectsRef);
+                    }}
+                >
+                    Know More<i className='fas fa-chevron-down'></i>
                 </div>
             </div>
         );
@@ -118,7 +137,7 @@ class Landing extends Component {
 
     renderProjects = () => {
         return (
-            <div className='projects-section'>
+            <div className='projects-section' ref={this.projectsRef}>
                 <h1>Projects</h1>
                 <div className='project-row'>
                     <ProjectCard />
