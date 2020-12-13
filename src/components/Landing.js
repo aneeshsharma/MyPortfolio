@@ -124,8 +124,8 @@ class Landing extends Component {
                     </a>
                 </Row>
                 <div
-					style={{ display: 'none' }} 
-					className='know-more-button'
+                    style={{ display: 'none' }}
+                    className='know-more-button'
                     onClick={() => {
                         this.scrollToRef(this.projectsRef);
                     }}
