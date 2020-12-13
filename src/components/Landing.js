@@ -124,7 +124,8 @@ class Landing extends Component {
                     </a>
                 </Row>
                 <div
-                    className='know-more-button'
+					style={{ display: 'none' }} 
+					className='know-more-button'
                     onClick={() => {
                         this.scrollToRef(this.projectsRef);
                     }}
@@ -152,12 +153,11 @@ class Landing extends Component {
     render() {
         let nav = this.renderNav();
         let landing = this.renderLanding();
-        let projects = this.renderProjects();
+        //let projects = this.renderProjects();
         return (
             <div>
                 {nav}
                 {landing}
-                {projects}
             </div>
         );
     }
