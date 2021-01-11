@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+# Build is deployed to github pages so is needed
+#/build
 
 # misc
 .DS_Store
