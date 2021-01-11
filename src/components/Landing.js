@@ -1,21 +1,21 @@
-import React, { Component } from "react";
-import { Row, Col } from "react-bootstrap";
+import React, { Component } from 'react';
+import { Row, Col } from 'react-bootstrap';
 
-import ProjectCard from "./ProjectCard";
+import ProjectCard from './ProjectCard';
 
-import "../css/landing.css";
-import "../css/nav.css";
-import "../css/projects.css";
-import "@fortawesome/fontawesome-free/css/all.css";
+import '../css/landing.css';
+import '../css/nav.css';
+import '../css/projects.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 
 class Landing extends Component {
     constructor(props) {
         super(props);
         this.definingText = [
-            "Software Developer",
-            "Fullstack Engineer",
-            "Game Designer",
-            "CG Artist",
+            'Software Developer',
+            'Fullstack Engineer',
+            'Game Designer',
+            'CG Artist',
         ];
         this.frameDuration = 15;
         this.holdDuration = 3000;
@@ -90,13 +90,13 @@ class Landing extends Component {
 
     renderNav = () => {
         return (
-            <div className='nav'>
+            <div className="nav">
                 <Col xs={6}>
-                    <Row className='logo'>It's Anish</Row>
+                    <Row className="logo">It's Anish</Row>
                 </Col>
-                <Col>Projects</Col>
+                {/* <Col>Projects</Col>
                 <Col>Experience</Col>
-                <Col>Contact</Col>
+                <Col>Contact</Col> */}
             </div>
         );
     };
@@ -104,33 +104,33 @@ class Landing extends Component {
     renderLanding = () => {
         const blink = this.renderBlink();
         return (
-            <div className='landing-section'>
+            <div className="landing-section">
                 <Row>
                     Hey!&nbsp;&nbsp;
-                    <div style={{ color: "#55ff55" }}>I'm Anish</div>
+                    <div style={{ color: '#55ff55' }}>I'm Anish</div>
                 </Row>
                 <br />
                 Your Friendly Neighbourhood <br />
-                <b style={{ cursor: "pointer", color: "#ffff33" }}>
+                <b style={{ cursor: 'pointer', color: '#ffff33' }}>
                     {this.state.define}
                     {blink}
                 </b>
                 <Row>
-                    <a href='https://github.com/aneeshsharma'>
-                        <i class='fab fa-github'></i>
+                    <a href="https://github.com/aneeshsharma">
+                        <i class="fab fa-github"></i>
                     </a>
-                    <a href='https://www.linkedin.com/in/anishsharma15/'>
-                        <i class='fab fa-linkedin'></i>
+                    <a href="https://www.linkedin.com/in/anishsharma15/">
+                        <i class="fab fa-linkedin"></i>
                     </a>
                 </Row>
                 <div
                     style={{ display: 'none' }}
-                    className='know-more-button'
+                    className="know-more-button"
                     onClick={() => {
                         this.scrollToRef(this.projectsRef);
                     }}
                 >
-                    Know More<i className='fas fa-chevron-down'></i>
+                    Know More<i className="fas fa-chevron-down"></i>
                 </div>
             </div>
         );
@@ -138,9 +138,9 @@ class Landing extends Component {
 
     renderProjects = () => {
         return (
-            <div className='projects-section' ref={this.projectsRef}>
+            <div className="projects-section" ref={this.projectsRef}>
                 <h1>Projects</h1>
-                <div className='project-row'>
+                <div className="project-row">
                     <ProjectCard />
                     <ProjectCard />
                     <ProjectCard />
