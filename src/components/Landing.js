@@ -14,7 +14,7 @@ class Landing extends Component {
         this.definingText = [
             'Software Developer',
             'Fullstack Engineer',
-            'Game Designer',
+            'Game Developer',
             'CG Artist',
         ];
         this.frameDuration = 15;
