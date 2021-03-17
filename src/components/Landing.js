@@ -109,19 +109,24 @@ class Landing extends Component {
                     Hey!&nbsp;&nbsp;
                     <div style={{ color: '#55ff55' }}>I'm Anish</div>
                 </Row>
-                <br />
-                Your Friendly Neighbourhood <br />
-                <b style={{ cursor: 'pointer', color: '#ffff33' }}>
-                    {this.state.define}
-                    {blink}
-                </b>
+                <Row>Your Friendly Neighbourhood</Row>
                 <Row>
-                    <a href="https://github.com/aneeshsharma">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/anishsharma15/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                    <div className="definition">
+                        {this.state.define}
+                        {blink}
+                    </div>
+                </Row>
+                <Row>
+                    <Col xs>
+                        <a href="https://github.com/aneeshsharma">
+                            <i className="fab fa-github"></i>
+                        </a>
+                    </Col>
+                    <Col xs>
+                        <a href="https://www.linkedin.com/in/anishsharma15/">
+                            <i className="fab fa-linkedin"></i>
+                        </a>
+                    </Col>
                 </Row>
                 <div
                     style={{ display: 'none' }}

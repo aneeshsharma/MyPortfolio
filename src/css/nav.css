@@ -17,6 +17,12 @@
     z-index: 100;
 }
 
+@media only screen and (max-width: 600px) {
+    .nav {
+        padding: 15px 5%;
+    }
+}
+
 .logo {
     font-size: 25px;
     font-family: logo-font;
