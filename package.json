@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy_build": "ng build --base-href https://itsanish.com/"
+    "pages": "ng build --base-href https://itsanish.com/ && ./cp_pages.sh"
   },
   "private": true,
   "dependencies": {
