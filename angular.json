@@ -27,7 +27,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.png",
-              "CNAME",
+              "src/CNAME",
               "src/assets"
             ],
             "styles": [
@@ -91,7 +91,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.png",
-              "CNAME",
+              "src/CNAME",
               "src/assets"
             ],
             "styles": [
