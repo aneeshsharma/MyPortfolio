@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cp -r dist/aneeshsharma.github.io docs
+cp -a dist/aneeshsharma.github.io/. docs/
