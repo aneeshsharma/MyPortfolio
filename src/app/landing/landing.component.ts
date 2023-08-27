@@ -15,4 +15,16 @@ export class LandingComponent {
         'Game Developer',
         'CG Artist',
     ];
+
+    socials: Map<string, string> = new Map([
+      ['linkedin', 'https://www.linkedin.com/in/anishsharma15/'],
+      ['github', 'https://github.com/aneeshsharma']
+    ]);
+
+    goToSocial(social: string) {
+      let href = this.socials.get(social);
+      if (href) {
+        window.open(href, '_blank');
+      }
+    }
 }
